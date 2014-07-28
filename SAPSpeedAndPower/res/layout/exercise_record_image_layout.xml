@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/exercise_record_image_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_background_1"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp" />
+
+    <shlrur.sap.app.ViewTouchImage
+        android:id="@+id/exercise_record_image_img"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="8"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/exercise_record_image_btn_save"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="저장" />
+
+        <Button
+            android:id="@+id/exercise_record_image_btn_delete"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="삭제" />
+
+        <Button
+            android:id="@+id/exercise_record_image_btn_load"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:text="사진\n가져오기" />
+    </LinearLayout>
+
+</LinearLayout>

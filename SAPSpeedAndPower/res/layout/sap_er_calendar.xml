@@ -1,0 +1,1428 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/calendar_month_before"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/month_move_selector"
+            android:gravity="center"
+            android:text="전"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="3px"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/calendar_month"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:background="#999999"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="3px"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/calendar_month_after"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/month_move_selector"
+            android:gravity="center"
+            android:text="후"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- 날짜 부분 시작 -->
+
+
+    <!-- 요일 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="#DDDDDD"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="일"
+            android:textColor="#FF0000" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="월"
+            android:textColor="#000000" />
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="화"
+            android:textColor="#000000" />
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="수"
+            android:textColor="#000000" />
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="목"
+            android:textColor="#000000" />
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="금"
+            android:textColor="#000000" />
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="토"
+            android:textColor="#0000FF" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#000000" />
+
+    <!-- 1주 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+        	android:id="@+id/calendar_0_0"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_0_0_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#FF0000"/>
+            <TextView
+                android:id="@+id/calendar_0_0_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_0_0_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_0_1"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_0_1_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_0_1_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_0_1_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_0_2"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_0_2_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_0_2_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_0_2_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_0_3"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_0_3_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_0_3_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_0_3_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_0_4"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_0_4_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_0_4_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_0_4_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_0_5"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_0_5_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_0_5_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_0_5_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_0_6"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_0_6_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#0000FF"/>
+            <TextView
+                android:id="@+id/calendar_0_6_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_0_6_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#000000" />
+
+    <!-- 2주 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+        <LinearLayout
+        	android:id="@+id/calendar_1_0"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_1_0_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#FF0000"/>
+            <TextView
+                android:id="@+id/calendar_1_0_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_1_0_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_1_1"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_1_1_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_1_1_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_1_1_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_1_2"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_1_2_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_1_2_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_1_2_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_1_3"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_1_3_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_1_3_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_1_3_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_1_4"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_1_4_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_1_4_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_1_4_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_1_5"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_1_5_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_1_5_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_1_5_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_1_6"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_1_6_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#0000FF"/>
+            <TextView
+                android:id="@+id/calendar_1_6_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_1_6_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#000000" />
+
+    <!-- 3주 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+        <LinearLayout
+        	android:id="@+id/calendar_2_0"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_2_0_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#FF0000"/>
+            <TextView
+                android:id="@+id/calendar_2_0_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_2_0_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_2_1"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_2_1_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_2_1_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_2_1_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_2_2"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_2_2_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_2_2_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_2_2_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_2_3"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_2_3_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_2_3_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_2_3_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_2_4"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_2_4_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_2_4_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_2_4_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_2_5"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_2_5_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_2_5_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_2_5_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_2_6"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_2_6_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#0000FF"/>
+            <TextView
+                android:id="@+id/calendar_2_6_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_2_6_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#000000" />
+
+    <!-- 4주 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+        <LinearLayout
+        	android:id="@+id/calendar_3_0"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_3_0_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#FF0000"/>
+            <TextView
+                android:id="@+id/calendar_3_0_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_3_0_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_3_1"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_3_1_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_3_1_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_3_1_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_3_2"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_3_2_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_3_2_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_3_2_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_3_3"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_3_3_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_3_3_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_3_3_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_3_4"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_3_4_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_3_4_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_3_4_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_3_5"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_3_5_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_3_5_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_3_5_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_3_6"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_3_6_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#0000FF"/>
+            <TextView
+                android:id="@+id/calendar_3_6_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_3_6_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#000000" />
+
+    <!-- 5주 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+        <LinearLayout
+        	android:id="@+id/calendar_4_0"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_4_0_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#FF0000"/>
+            <TextView
+                android:id="@+id/calendar_4_0_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_4_0_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_4_1"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_4_1_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_4_1_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_4_1_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_4_2"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_4_2_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_4_2_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_4_2_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_4_3"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_4_3_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_4_3_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_4_3_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_4_4"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_4_4_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_4_4_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_4_4_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_4_5"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_4_5_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_4_5_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_4_5_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_4_6"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_4_6_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#0000FF"/>
+            <TextView
+                android:id="@+id/calendar_4_6_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_4_6_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#000000" />
+
+    <!-- 6주 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+        <LinearLayout
+        	android:id="@+id/calendar_5_0"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_5_0_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#FF0000"/>
+            <TextView
+                android:id="@+id/calendar_5_0_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_5_0_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_5_1"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_5_1_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_5_1_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_5_1_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_5_2"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_5_2_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_5_2_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_5_2_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_5_3"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_5_3_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_5_3_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_5_3_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_5_4"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_5_4_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_5_4_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_5_4_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_5_5"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_5_5_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/calendar_5_5_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_5_5_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#000000" />
+        
+        <LinearLayout
+        	android:id="@+id/calendar_5_6"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <TextView 
+                android:id="@+id/calendar_5_6_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="3"
+                android:textColor="#0000FF"/>
+            <TextView
+                android:id="@+id/calendar_5_6_image"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/calendar_5_6_record"
+                android:layout_width="fill_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

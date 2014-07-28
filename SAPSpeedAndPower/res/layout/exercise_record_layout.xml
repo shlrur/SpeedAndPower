@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_background_1"
+        android:gravity="center"
+        android:text="운동 일지"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/exercise_record_date_yesterday"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/date_pick_selector"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+        
+        <View 
+            android:layout_width="3px"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"/>
+
+        <LinearLayout
+            android:id="@+id/exercise_record_date_pick"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:background="@drawable/date_pick_selector"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/exercise_record_date"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/calendar_1" />
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="3px"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/exercise_record_date_tomorrow"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/date_pick_selector"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/exercise_record_record"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="6"
+        android:hint="운동 일지를 입력하세요."
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:orientation="horizontal" >
+
+        <shlrur.sap.app.ViewTouchImage
+            android:id="@+id/exercise_record_thumbnail_img"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:scaleType="fitCenter" />
+
+        <Button
+            android:id="@+id/exercise_record_edit_image"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="사진 보기" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/exercise_record_btn_send"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="내보내기" />
+        <Button
+            android:id="@+id/exercise_record_btn_copy_string"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="운동내용\n복사" />
+    </LinearLayout>
+
+</LinearLayout>

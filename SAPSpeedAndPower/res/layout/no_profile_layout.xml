@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txt_background_1"
+            android:gravity="center"
+            android:text="백업 파일 가져오기"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:gravity="center"
+            android:text="SAP app에서 저장하셨던 기록 파일을 가져옵니다."
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/noprofile_import"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="backup 파일 가져오기"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/txt_background_2" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txt_background_1"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:gravity="center"
+            android:text="개인 프로필을 작성해주세요.\n최대한 정확히 입력해 주세요.\n이후 수정 가능합니다."
+            android:textSize="10sp" />
+
+        <!-- height -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="키"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/noprofile_height"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="cm"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- weight -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="몸무게"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/noprofile_weight"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="kg"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- muscle -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="근육량"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/noprofile_muscle"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="kg"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- fat -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="지방량"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/noprofile_fat"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="kg"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/txt_background_2" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txt_background_1"
+            android:gravity="center"
+            android:text="Weight Unit"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:gravity="center"
+            android:text="주로 사용하는 무게 단위를 선택하세요.\n이후 수정 가능합니다."
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ToggleButton
+                android:id="@+id/noprofile_tgl_kg"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textOff="kg"
+                android:textOn="kg" />
+
+            <ToggleButton
+                android:id="@+id/noprofile_tgl_lbs"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textOff="lbs"
+                android:textOn="lbs" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/txt_background_2" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txt_background_1"
+            android:gravity="center"
+            android:text="One Repitition Maximum"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:gravity="center"
+            android:text="운동 종류별 1RM 무게를 입력해 주세요.\n이후 수정 가능합니다."
+            android:textSize="10sp" />
+
+        <!-- squat -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="스쿼트"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/noprofile_squat"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/noprofile_unit_0"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="kg"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- deadlift -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="데드리프트"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/noprofile_deadlift"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/noprofile_unit_1"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="kg"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- calfraise -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="카프레이즈"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/noprofile_calfraise"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/noprofile_unit_2"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="kg"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- benchpress -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="벤치프레스"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/noprofile_benchpress"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/noprofile_unit_3"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="kg"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- barbellrow -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="바벨로우"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/noprofile_barbellrow"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/noprofile_unit_4"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="kg"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- curl -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="컬"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/noprofile_curl"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/noprofile_unit_5"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="kg"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- militarypress -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="밀리터리프레스"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/noprofile_militarypress"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/noprofile_unit_6"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="kg"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- pullup -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="풀업"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/noprofile_pullup"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/noprofile_unit_7"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="kg"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/txt_background_2" />
+
+        <Button
+            android:id="@+id/noprofile_save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="저장하기"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</ScrollView>

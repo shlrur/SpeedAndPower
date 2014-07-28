@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txt_background_2"
+            android:gravity="center"
+            android:text="매일 운동"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <shlrur.sap.app.ViewTouchImage
+            android:layout_width="fill_parent"
+            android:layout_height="250dip"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_help_wod_1" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="상, 하, 좌, 우 로 스크롤이 가능합니다.\n아래쪽의 버튼을 이용해서 스트렝스, 완초삽, 역도, 특수부대, 보디빌딩을 바꿔보실 수 있습니다."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:background="#50000000"/>
+        
+        <shlrur.sap.app.ViewTouchImage
+            android:layout_width="fill_parent"
+            android:layout_height="250dip"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_help_wod_2" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="날짜 오른쪽의 달력 아이콘을 터치 하시면 날짜를 바꾸실 수 있습니다."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</ScrollView>

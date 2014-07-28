@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txt_background_2"
+            android:gravity="center"
+            android:text="기록 내보내기"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="기록 내보내기를 하시면 운동일지와 프로필 설정값, 1RM 설정값이 텍스트 파일과 사진(jpg) 파일로 저장이 됩니다.\n저장 위치는 내부 저장소의 SAP_Application 폴더 내의 SAP_Export 폴더가 됩니다."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</ScrollView>

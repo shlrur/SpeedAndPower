@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txt_background_2"
+            android:gravity="center"
+            android:text="설정"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+        
+        <shlrur.sap.app.ViewTouchImage
+            android:layout_width="fill_parent"
+            android:layout_height="250dip"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_help_setup_1" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="프로필 설정을 통해서 키, 몸무게, 근골격량, 체지방량을 수정하실 수 있습니다.\n해당 값들은 저장한 날짜별로 모두 저장이 되기 때문에 최대한 정확히 입력해 주십시오."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:background="#50000000" />
+
+        <shlrur.sap.app.ViewTouchImage
+            android:layout_width="fill_parent"
+            android:layout_height="250dip"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_help_setup_2" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Strength 1RM 설정을 통해서 8가지의 스트렝스 운동의 1-RM을 수정하실 수 있습니다.\n이 값은 매일운동의 스트렝스에서 중량을 자동으로 계산하는데 쓰입니다.\n그리고 지정한 날짜별로 모두 저장이 되기 때문에 최대한 정확히 입력해주시길 바랍니다.\nkg과 lbs 두 단위중에 하나를 선택하시면 값들은 자동으로 계산이 됩니다."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="기록수정을 원하는 운동만 RM을 변경하는 것이 가능합니다."
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</ScrollView>

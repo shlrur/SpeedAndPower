@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/logo_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="40" />
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="64"
+        android:scaleType="fitXY"
+        android:src="@drawable/sap_logo" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="40" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:text="http://speedandpower.co.kr\nApp Director : shlrur123@gmail.com"
+        android:textColor="#FD8C00"
+        android:textSize="10sp" />
+
+</LinearLayout>

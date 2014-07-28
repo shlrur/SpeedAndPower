@@ -1,0 +1,519 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txt_background_1"
+            android:gravity="center"
+            android:text="설정"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <!-- Profile -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/setup_profile_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2513-01-11 프로필"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dip"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="키"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="3dip"
+                    android:layout_height="fill_parent"
+                    android:background="#DDDDDD" />
+
+                <TextView
+                    android:id="@+id/setup_profile_height"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="몸무게"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="3dip"
+                    android:layout_height="fill_parent"
+                    android:background="#DDDDDD" />
+
+                <TextView
+                    android:id="@+id/setup_profile_weight"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="근골격량"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="3dip"
+                    android:layout_height="fill_parent"
+                    android:background="#DDDDDD" />
+
+                <TextView
+                    android:id="@+id/setup_profile_muscle"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="체지방량"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="3dip"
+                    android:layout_height="fill_parent"
+                    android:background="#DDDDDD" />
+
+                <TextView
+                    android:id="@+id/setup_profile_fat"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/setup_profile_setup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Profile 설정"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <ToggleButton
+                android:id="@+id/setup_tgl_kg"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textOff="kg"
+                android:textOn="kg" />
+
+            <ToggleButton
+                android:id="@+id/setup_tgl_lbs"
+                android:layout_width="0px"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:checked="false"
+                android:textOff="lbs"
+                android:textOn="lbs" />
+        </LinearLayout>
+
+        <!-- Repetition Maximum -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/setup_strength_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2513-01-11\nRepetition Maximum"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5dip"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="스쿼트"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="3dip"
+                    android:layout_height="fill_parent"
+                    android:background="#DDDDDD" />
+
+                <TextView
+                    android:id="@+id/setup_strength_squat"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="데드리프트"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="3dip"
+                    android:layout_height="fill_parent"
+                    android:background="#DDDDDD" />
+
+                <TextView
+                    android:id="@+id/setup_strength_deadlift"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="카프레이즈"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="3dip"
+                    android:layout_height="fill_parent"
+                    android:background="#DDDDDD" />
+
+                <TextView
+                    android:id="@+id/setup_strength_carf"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="벤치프레스"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="3dip"
+                    android:layout_height="fill_parent"
+                    android:background="#DDDDDD" />
+
+                <TextView
+                    android:id="@+id/setup_strength_bench"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="바벨로우"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="3dip"
+                    android:layout_height="fill_parent"
+                    android:background="#DDDDDD" />
+
+                <TextView
+                    android:id="@+id/setup_strength_row"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="컬"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="3dip"
+                    android:layout_height="fill_parent"
+                    android:background="#DDDDDD" />
+
+                <TextView
+                    android:id="@+id/setup_strength_curl"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="밀리터리프레스"
+                    android:textColor="#000000"
+                    android:textSize="23sp" />
+
+                <View
+                    android:layout_width="3dip"
+                    android:layout_height="fill_parent"
+                    android:background="#DDDDDD" />
+
+                <TextView
+                    android:id="@+id/setup_strength_military"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="#DDDDDD" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="풀 업"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+
+                <View
+                    android:layout_width="3dip"
+                    android:layout_height="fill_parent"
+                    android:background="#DDDDDD" />
+
+                <TextView
+                    android:id="@+id/setup_strength_pullup"
+                    android:layout_width="0px"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/setup_strength_setup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Strength 1RM 설정"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</ScrollView>

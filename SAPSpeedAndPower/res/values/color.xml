@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_green">				#00FF00		</color>
+    <color name="color_purple">				#DE00DE 	</color>
+    <color name="color_transparent">		#A0000000	</color>
+    
+    <color name="color_month_move_pick">	#AAAAAA		</color>
+    <color name="color_month_move_nopick">	#999999		</color>
+    
+    <color name="color_white">				#FFFFFF		</color>
+    <color name="color_lightskyblue">		#87CEFA		</color>
+    <color name="color_skyblue">			#87CEEB		</color>
+</resources>

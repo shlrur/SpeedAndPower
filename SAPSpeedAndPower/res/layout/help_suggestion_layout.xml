@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txt_background_2"
+            android:gravity="center"
+            android:text="e-mail 보내기"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="안드로이드용 SAP 어플리케이션 제작자에게 e-mail을 보냅니다.\n내용은 버그 수정 요청, 불편사항 알림, 궁금한점 문의 등등을 하실 수 있습니다.\n제목은 변경하지 말고 전송해주십시오."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</ScrollView>

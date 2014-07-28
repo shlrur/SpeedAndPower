@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txt_background_2"
+            android:gravity="center"
+            android:text="RM, 단위 계산기"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="RM(Repetition Maximum) 계산기의 결과값은 개개인마다 조금씩 다를 수 있으므로 참고용으로만 사용하시기 바랍니다."
+            android:textColor="#FF0000"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:background="#50000000" />
+        
+        <shlrur.sap.app.ViewTouchImage
+            android:layout_width="fill_parent"
+            android:layout_height="250dip"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_help_rm_unit_cal_1" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1-RM을 구합니다.\n예를 들어, 90의 무게로 3회가 가능할 때 1-RM은 약 98.2가 될 수 있습니다."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:background="#50000000" />
+        
+        <shlrur.sap.app.ViewTouchImage
+            android:layout_width="fill_parent"
+            android:layout_height="250dip"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_help_rm_unit_cal_2" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1-RM을 알고, 1번 이상의 반복량으로 운동을 할 때, 몇 kg(혹은 lbs)의 중량으로 정해진 반복량을 수행할 수 있는지를 구합니다.\n예를 들어, 1-RM이 100이고 목표 훈련량이 5-RM일 때 약 85.7의 무게로 수행할 수 있습니다."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:background="#50000000" />
+        
+        <shlrur.sap.app.ViewTouchImage
+            android:layout_width="fill_parent"
+            android:layout_height="250dip"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_help_rm_unit_cal_3" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1-RM을 알고, 훈련하려는 중량을 정해놨을 때, 몇 번의 반복훈련이 가능한지를 구합니다.\n예를 들어, 1-RM이 100이고 90의 중량으로 운동하실 때, 최대 반복 가능한 횟수는 약 3개가 됩니다.\n"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:background="#50000000" />
+        
+        <shlrur.sap.app.ViewTouchImage
+            android:layout_width="fill_parent"
+            android:layout_height="250dip"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_help_rm_unit_cal_4" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="kg과 lbs의 단위 계산을 합니다.\n두개의 값 중에 하나만 입력하고 변환을 터치하십시오."
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</ScrollView>

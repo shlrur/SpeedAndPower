@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_background_1"
+        android:gravity="center"
+        android:text="도 움 말"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/help_home"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="72dip"
+        android:layout_marginRight="72dip"
+        android:layout_marginTop="30dip"
+        android:text="홈 화면"
+        android:textSize="15sp" />
+    
+    <Button
+        android:id="@+id/help_wod"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="72dip"
+        android:layout_marginRight="72dip"
+        android:text="매일 운동"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/help_exercise_record"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="72dip"
+        android:layout_marginRight="72dip"
+        android:text="운동 일지"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/help_rm_calculator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="72dip"
+        android:layout_marginRight="72dip"
+        android:text="RM, 단위 계산기"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/help_setup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="72dip"
+        android:layout_marginRight="72dip"
+        android:text="설정"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/help_backup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="72dip"
+        android:layout_marginRight="72dip"
+        android:text="기록 저장"
+        android:textSize="15sp" />
+    
+    <Button
+        android:id="@+id/help_export"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="72dip"
+        android:layout_marginRight="72dip"
+        android:text="기록 내보내기"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/help_suggestion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="72dip"
+        android:layout_marginRight="72dip"
+        android:text="e-mail 보내기"
+        android:textSize="15sp" />
+
+</LinearLayout>

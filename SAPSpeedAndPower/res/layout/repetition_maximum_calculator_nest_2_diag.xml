@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#50000000"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/rm_calculator_nest_diag_2_one_rm"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="중량" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="이(가) 1-RM의 중량,"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/rm_calculator_nest_diag_2_counts"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="횟수" />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="회의 반복훈련이 목표"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dip"
+        android:layout_marginBottom="15dip"
+        android:layout_marginTop="15dip"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="최대 중량 "
+            android:textSize="23sp" />
+
+        <EditText
+            android:id="@+id/rm_calculator_nest_diag_2_weight"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:editable="false"
+            android:gravity="center"
+            android:hint="결과" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rm_calculator_nest_diag_2_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="계산 하기"
+        android:textSize="30sp" />
+
+</LinearLayout>
